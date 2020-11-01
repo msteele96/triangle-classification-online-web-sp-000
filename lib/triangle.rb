@@ -9,9 +9,9 @@ class Triangle
   end
 
   def kind
-    
 
-    return 
+
+    return
   end
 
   class TriangleError < StandardError
@@ -20,5 +20,5 @@ class Triangle
       "The sum of any 2 sides must be larger than the length of the third side."
     end
   end
-  
+
 end
