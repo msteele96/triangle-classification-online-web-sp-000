@@ -35,8 +35,7 @@ class Triangle
 
   class TriangleError < StandardError
     def message
-      "A triangle must have 3 sides that are all larger than 0."
-      "The sum of any 2 sides must be larger than the length of the third side."
+      "A triangle must have 3 sides that are all larger than 0 AND the sum of any 2 sides must be larger than the length of the third side."
     end
   end
 
