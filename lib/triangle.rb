@@ -11,7 +11,13 @@ class Triangle
   def kind
     if @side_1 > 0 && @side_2 > 0 && @side_3 > 0
       if @side_1 + @side_2 > side_3 == true && @side_1 + @side_3 > @side_2 == true && @side_2 + @side_3 > @side_1 == true
-        is triangle
+        if @side_1 && @side_2 == @side_3
+          return :equilateral
+        elsif @side_1 == @side_2 || @side_1 == @side_3 || @side_2 == @side_3
+          return :isosceles
+        else
+          return :scalene
+        end
       else
         begin
           raise TriangleError
@@ -26,8 +32,6 @@ class Triangle
         end
       end
     end
-
-    return
   end
 
   class TriangleError < StandardError
