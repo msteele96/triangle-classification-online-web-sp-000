@@ -30,6 +30,7 @@ class Triangle
         else
           return :scalene
         end
+      end
     end
   end
 
